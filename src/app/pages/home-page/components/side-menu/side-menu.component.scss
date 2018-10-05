@@ -1,0 +1,25 @@
+.side-menu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 20%;
+	background-color: #3f3f56;
+	.header{
+		width: 100%;
+		margin: 20px 0 ;
+		h1{
+			color: #ffffff;
+			text-transform: uppercase;
+			font-size: 30px;
+			font-weight: 300;
+			text-align: center;
+		}
+		p{
+			font-size: 14px;
+			font-weight: 300;
+			text-align: center;
+			color: #bbb7b7;
+		}
+	}
+}

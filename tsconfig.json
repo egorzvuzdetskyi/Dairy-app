@@ -1,20 +1,55 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2017",
-      "dom"
-    ]
-  }
+	"compileOnSave": false,
+	"compilerOptions": {
+		"outDir": "./dist/out-tsc",
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "es5",
+		"baseUrl": "./src",
+		"paths": {
+			"@services/*": [
+				"app/services/*"
+			],
+			"@components/*": [
+				"app/components/*"
+			],
+			"@constants/*": [
+				"app/constants/*"
+			],
+			"@layout/*": [
+				"app/layout/*"
+			],
+			"@modules/*": [
+				"app/modules/*"
+			],
+			"@objects/*": [
+				"app/objects/*"
+			],
+			"@pages/*": [
+				"app/pages/*"
+			],
+			"@pipes/*": [
+				"app/pipes/*"
+			],
+			"@routes/*": [
+				"app/routes/*"
+			],
+			"@environments/*": [
+				"environments/*"
+			],
+			"@animations/*": [
+				"app/animations/*"
+			]
+		},
+		"typeRoots": [
+			"node_modules/@types"
+		],
+		"lib": [
+			"es2017",
+			"dom"
+		]
+	}
 }
