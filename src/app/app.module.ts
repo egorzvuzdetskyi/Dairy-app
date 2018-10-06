@@ -13,8 +13,7 @@ import { UiModule } from '@modules/ui/ui.module';
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
-		HomePageModule,
-		UiModule
+		HomePageModule
 	],
 	providers: [],
 	bootstrap: [ AppComponent ]
