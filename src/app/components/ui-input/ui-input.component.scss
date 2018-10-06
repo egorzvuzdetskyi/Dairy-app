@@ -1,0 +1,29 @@
+.inputGroup {
+	display: block;
+	width: 100%;
+	z-index: 1;
+	margin-bottom: 10px;
+	input {
+		font-family: 'Poppins', sans-serif;
+		font-size: 15px;
+		line-height: 1.5;
+		color: #666666;
+		display: block;
+		width: 96%;
+		background: #e6e6e6;
+		height: 50px;
+		border-radius: 25px;
+		border: none;
+		padding-left: 5%;
+	}
+	.error{
+		margin: 0;
+		text-align: left;
+		margin-left: 10px;
+		font-size: 14px;
+		color: red;
+	}
+	input.inValid{
+		border: 1px solid red;
+	}
+}

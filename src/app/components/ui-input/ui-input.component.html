@@ -1,0 +1,11 @@
+<div class="inputGroup">
+	<label *ngIf="labelInput"> {{labelInput}} </label>
+	<input placeholder="{{placeholderInput}}"
+		   [(ngModel)]="_ngModel"
+		   type = {{inputType}}
+		   (ngModelChange)="handleChanges($event)"
+		   (blur)="checkError(true)"
+		   [class.inValid]="showErrorFlag"
+		   type="text">
+	<p class="error" *ngIf="showErrorFlag">{{error}}</p>
+</div>
