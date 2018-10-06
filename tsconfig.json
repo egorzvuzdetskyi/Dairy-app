@@ -16,23 +16,14 @@
 			"@components/*": [
 				"app/components/*"
 			],
-			"@constants/*": [
-				"app/constants/*"
-			],
-			"@layout/*": [
-				"app/layout/*"
-			],
 			"@modules/*": [
 				"app/modules/*"
 			],
-			"@objects/*": [
-				"app/objects/*"
+			"@models/*": [
+				"app/models/*"
 			],
 			"@pages/*": [
 				"app/pages/*"
-			],
-			"@pipes/*": [
-				"app/pipes/*"
 			],
 			"@routes/*": [
 				"app/routes/*"
@@ -40,8 +31,8 @@
 			"@environments/*": [
 				"environments/*"
 			],
-			"@animations/*": [
-				"app/animations/*"
+			"@helpers/*": [
+				"helpers/*"
 			]
 		},
 		"typeRoots": [
