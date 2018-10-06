@@ -5,7 +5,7 @@
 		   type = {{inputType}}
 		   (ngModelChange)="handleChanges($event)"
 		   (blur)="checkError(true)"
-		   [class.inValid]="showErrorFlag"
-		   type="text">
+		   [class.inValid]="showErrorFlag">
+
 	<p class="error" *ngIf="showErrorFlag">{{error}}</p>
 </div>
