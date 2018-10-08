@@ -4,11 +4,30 @@
 	</h1>
 
 	<div class="form">
-
+		<div class="row">
+			<div class="input">
+				<app-ui-input
+					[type]="'placeholder'"
+					[placeholder]="'Type name here...'"
+					[formCtrl]="form.controls['itemName']"
+				></app-ui-input>
+			</div>
+			<div class="button">
+				<app-ui-button
+					[value]="'Add new'"
+					(onClick)="addNewItem(form)"
+				></app-ui-button>
+			</div>
+		</div>
 	</div>
 
-	<div class="list-of-items">
-
+	<div class="list-of-items" *ngIf="itemList.length > 0">
+		<app-item *ngFor="let item of itemList"
+				  [item]="item"
+				  [isActive]="selectedItem && selectedItem.id === item.id"
+				  (onDeleteItem)="deleteItem(item)"
+				  (onSelectItem)="selectItem(item)"
+		></app-item>
 	</div>
 
 </div>

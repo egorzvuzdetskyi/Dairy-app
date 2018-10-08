@@ -1,0 +1,38 @@
+.item {
+	border-bottom: 1.3px solid #d6d5d5;
+	padding-top: 12px;
+	cursor: pointer;
+	position: relative;
+	.text {
+		display: inline-block;
+		width: 70%;
+		margin-right: 15%;
+		font-weight: bold;
+	}
+	.button {
+		display: inline-block;
+		width: 15%;
+	}
+}
+
+.item:hover:after {
+	content: '';
+	width: 3px;
+	position: absolute;
+	left: -20px;
+	height: 100%;
+	top: 50%;
+	background-color: red;
+	transform: translate(0, -50%);
+}
+
+.item.active:after {
+	content: '';
+	width: 3px;
+	position: absolute;
+	left: -20px;
+	height: 100%;
+	top: 50%;
+	background-color: red;
+	transform: translate(0, -50%);
+}

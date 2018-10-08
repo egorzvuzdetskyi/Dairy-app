@@ -1,31 +1,41 @@
-.buttonGroup{
-  display: block;
-  width: 100%;
-  z-index: 1;
-  margin-bottom: 10px;
-  button{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #fff;
-    text-transform: uppercase;
-    width: 102%;
-    height: 50px;
-    margin-top: 35px;
-    border: none;
-    border-radius: 25px;
-    background: #57b846;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 25px;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  }
+.buttonGroup {
+	z-index: 1;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	button {
+		width: 100%;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 15px;
+		line-height: 1.5;
+		cursor: pointer;
+		color: #fff;
+		text-transform: uppercase;
+		height: 55px;
+		border: none;
+		border-radius: 5px;
+		background: #51d0b9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 25px;
+		-webkit-transition: all 0.4s;
+		-o-transition: all 0.4s;
+		-moz-transition: all 0.4s;
+		transition: all 0.4s;
+	}
+	button.delete{
+		background: #ffff;
+		border: 2px solid #f91010cf;
+		height: 35px;
+		color: #f91010cf;
+		font-weight: 600;
+		font-size: 13px;
+	}
+	button.delete:hover{
+		background: #f91010cf;
+		border: 2px solid #f91010cf;
+		color: #ffff;
+	}
 }

@@ -5,6 +5,8 @@ import { SideMenuComponent } from '@pages/home-page/components/side-menu/side-me
 import { ItemsListComponent } from '@pages/home-page/components/items-list/items-list.component';
 import { CommentsListComponent } from '@pages/home-page/components/comments-list/comments-list.component';
 import { UiModule } from '@modules/ui/ui.module';
+import { ItemComponent } from '@pages/home-page/components/items-list/components/item/item.component';
+import { CommentComponent } from '../../pages/home-page/components/comments-list/components/comment/comment.component';
 
 @NgModule ({
 	imports: [
@@ -15,7 +17,9 @@ import { UiModule } from '@modules/ui/ui.module';
 		HomePageComponent,
 		SideMenuComponent,
 		ItemsListComponent,
-		CommentsListComponent
+		CommentsListComponent,
+		ItemComponent,
+		CommentComponent
 	],
 	exports: [
 		HomePageComponent,

@@ -1,5 +1,9 @@
 <div class="buttonGroup">
-	<button [disabled]="disabled">
+	<button
+		[disabled]="disabled"
+		(click)="emitClick()"
+		[class.delete]="isDelete"
+	>
 		{{value}}
 	</button>
 </div>

@@ -1,0 +1,12 @@
+<div class="item" (click)="emitSelectedItemEvent()" [class.active]="active">
+	<div class="text">
+		{{item.name}}
+	</div>
+	<div class="button">
+		<app-ui-button
+			[value]="'Delete'"
+			[isDelete]="true"
+			(onClick)="emitDeleteItemEvent()"
+		></app-ui-button>
+	</div>
+</div>

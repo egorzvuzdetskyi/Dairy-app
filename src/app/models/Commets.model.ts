@@ -1,3 +1,5 @@
+import { idGenerator } from '../helpers/idGenerator';
+
 export class Comments {
 	public id: string;
 	public contentText: string;
@@ -8,11 +10,7 @@ export class Comments {
 		
 		this.contentText = contentText;
 		
-		this.id = Comments.idGenerator();
+		this.id = idGenerator.generateId();
 	};
-	
-	public static idGenerator = () : string => {
-		return '_' + Math.random().toString(36).substr(2, 9);
-	}
 	
 }

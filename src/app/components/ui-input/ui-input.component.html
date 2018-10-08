@@ -1,11 +1,20 @@
 <div class="inputGroup">
 	<label *ngIf="labelInput"> {{labelInput}} </label>
 	<input placeholder="{{placeholderInput}}"
+		   *ngIf="!isTextarea"
 		   [(ngModel)]="_ngModel"
 		   type = {{inputType}}
 		   (ngModelChange)="handleChanges($event)"
 		   (blur)="checkError(true)"
 		   [class.inValid]="showErrorFlag">
-
+	<textarea
+		placeholder="{{placeholderInput}}"
+		*ngIf="isTextarea"
+		[(ngModel)]="_ngModel"
+		(ngModelChange)="handleChanges($event)"
+		(blur)="checkError(true)"
+		[class.inValid]="showErrorFlag"
+		(keydown.control.enter)="emitSubmitEvent()"
+	></textarea>
 	<p class="error" *ngIf="showErrorFlag">{{error}}</p>
 </div>

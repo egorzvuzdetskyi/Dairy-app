@@ -1,17 +1,24 @@
 import { Comments } from './Commets.model';
+import { idGenerator } from '../helpers/idGenerator';
 
 export class ItemModel {
 	
-	constructor(name: string) {
+	public name: string;
+	
+	public id: string;
+	
+	public comments: Comments[];
+	constructor(name: string, id?: string, comments?: Comments[]) {
 		
 		if(!name) throw new Error('Item should have name');
 		
 		this.name = name;
+		
+		this.id = id ? id : idGenerator.generateId();
+		
+		this.comments = comments ? comments : [];
+		
 	}
-	
-	public name: string;
-	
-	private comments: Comments[];
 	
 	public addComment = (comment : Comments) : Comments[] => {
 		
@@ -21,6 +28,10 @@ export class ItemModel {
 		
 		return this.comments;
 		
+	};
+	
+	public getComments = () : Comments[] => {
+		return this.comments
 	};
 	
 	public deleteComment = (commentForDeleting : Comments) : Comments[] => {
